@@ -17,6 +17,7 @@
 		<java.version>17</java.version>
 		<grpc.version>1.56.0</grpc.version>
 		<os.detected.classifier>osx-aarch_64</os.detected.classifier>
+		 <!-- <os.detected.classifier>windows-x86_64</os.detected.classifier> -->
 		<protobuf.version>3.19.1</protobuf.version>
 		<protobuf-plugin.version>0.6.1</protobuf-plugin.version>
 	</properties>
