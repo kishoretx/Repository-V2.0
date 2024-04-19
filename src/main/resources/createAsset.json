@@ -1,0 +1,52 @@
+{
+  "asset": {
+    "asset_type_version": "assetTypes/com.fico.repo.qa/versions/v1alpha1",
+    "service_labels":
+    {
+      "key": "labelKey",
+      "value": "labelVal"
+    }
+  ,
+    "service_tags": [
+      "cap_tag"
+    ],
+    "description": "description",
+    "display_name": "a",
+    "remark_comment": "remark",
+    "structured_content": {
+      "content": {
+        "fields": [
+          {
+            "key": "contentKey1",
+            "value": {
+              "string_value": "contentVal1"
+            }
+          }, {
+            "key": "contentKey2",
+            "value": {
+              "number_value": 123
+            }
+          }, {
+            "key": "contentKey3",
+            "value": {
+              "struct_value": {
+                "fields": [
+                  {
+                    "key": "internalNest1",
+                    "value": {
+                      "string_value": "internalNestVal1"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "user_tags": [
+      "userTag"
+    ],
+    "version_level": "VERSION_LEVEL_PATCH"
+  }
+}

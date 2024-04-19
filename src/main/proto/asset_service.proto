@@ -1,0 +1,206 @@
+/**
+ * This material is the confidential, unpublished property
+ * of Fair Isaac Corporation. Receipt or possession
+ * of this material does not convey rights to divulge,
+ * reproduce, use, or allow others to use it without
+ * the specific written authorization of Fair Isaac Corporation
+ * and use must conform strictly to the
+ * license agreement.
+ *
+ * Copyright (c) Fair Isaac Corporation, 2024
+ *
+ * All Rights Reserved.
+ */
+syntax = "proto3";
+
+package fico.platform.repository.v2alpha1;
+
+
+//import "fico/platform/repository/v2alpha1/resources.proto";
+import "resources.proto";
+import "google/api/field_behavior.proto";
+import "google/api/resource.proto";
+import "google/protobuf/field_mask.proto";
+
+option java_multiple_files = true;
+option java_outer_classname = "AssetServiceProto";
+option java_package = "com.fico.platform.repository.v2alpha1";
+
+// Manages assets and their content, offering per-asset operations such as create,
+// read, update and delete, as well as surfacing available asset types.
+service AssetService {
+  // Lists available asset types.
+  rpc ListAssetTypes(ListAssetTypesRequest) returns (ListAssetTypesResponse);
+
+  // Gets an asset type.
+  rpc GetAssetType(GetAssetTypeRequest) returns (GetAssetTypeResponse);
+
+  // Gets an asset type version.
+  rpc GetAssetTypeVersion(GetAssetTypeVersionRequest) returns (GetAssetTypeVersionResponse);
+
+  // Gets an asset.
+  rpc GetAsset(GetAssetRequest) returns (GetAssetResponse);
+
+  // Creates an asset.
+  // Can either create a new asset (from scratch, or based on an asset in the same asset lineage), or clone an existing asset (to create a new asset lineage).
+  rpc CreateAsset(CreateAssetRequest) returns (CreateAssetResponse);
+
+  // Updates an asset.
+  rpc UpdateAsset(UpdateAssetRequest) returns (UpdateAssetResponse);
+
+  // Deletes an asset.
+  rpc DeleteAsset(DeleteAssetRequest) returns (DeleteAssetResponse);
+
+  // Lists available assets.
+  rpc ListAssets(ListAssetsRequest) returns (ListAssetsResponse);
+}
+
+message ListAssetTypesRequest {
+  // The maximum number of items to return.
+  int32 page_size = 1 [(google.api.field_behavior) = OPTIONAL];
+
+  // The next_page_token value returned from a previous list request, if any.
+  string page_token = 2 [(google.api.field_behavior) = OPTIONAL];
+}
+
+message ListAssetTypesResponse {
+  // The page of asset types, up to a maximum number of items specified by page_size in the request.
+  repeated AssetType asset_types = 1;
+
+  // Token to retrieve the next page of results, or empty if there are no more results in the list.
+  string next_page_token = 2;
+}
+
+message GetAssetTypeRequest {
+  string name = 1 [
+    (google.api.field_behavior) = REQUIRED,
+    (google.api.resource_reference).type = "repository.platform.fico.com/AssetType"
+  ];
+}
+
+message GetAssetTypeResponse {
+  AssetType asset_type = 1;
+}
+
+message GetAssetTypeVersionRequest {
+  string name = 1 [
+    (google.api.field_behavior) = REQUIRED,
+    (google.api.resource_reference).type = "repository.platform.fico.com/AssetTypeVersion"
+  ];
+}
+
+message GetAssetTypeVersionResponse {
+  AssetTypeVersion asset_type_version = 1;
+}
+
+message GetAssetRequest {
+  // assetTypes/com.fico.repository/assets/uuid
+  // asset_type_version: assetTypes/com.fico.repository/versions/v1alpha1
+  // The resource name of the asset, e.g. assetTypes/{asset_type_id}/assets/{asset_id}
+  string name = 1 [
+    (google.api.field_behavior) = REQUIRED,
+    (google.api.resource_reference).type = "repository.platform.fico.com/Asset"
+  ];
+  AssetView asset_view = 2 [(google.api.field_behavior) = OPTIONAL];
+  // Mask of fields to retrieve.
+  google.protobuf.FieldMask fields = 3 [(google.api.field_behavior) = OPTIONAL];
+}
+
+message GetAssetResponse {
+  Asset asset = 1;
+}
+
+// Creates an asset.
+// To clone an existing asset, specify clone_source.
+// To create a new version of an existing asset, specify asset.lineage_parent.
+message CreateAssetRequest {
+  Asset asset = 1;
+  // If present, the resource name of the asset to clone.
+  string clone_source = 2 [
+    (google.api.field_behavior) = OPTIONAL,
+    (google.api.resource_reference).type = "repository.platform.fico.com/Asset"
+  ];
+
+  // A unique identifier for this request. A random UUID is recommended.
+  // This request is only idempotent if a `request_id` is provided.
+  string request_id = 3 ;
+}
+
+message CreateAssetResponse {
+  // The created asset.
+  Asset asset = 1;
+}
+
+message UpdateAssetRequest {
+  // The update to apply.
+  Asset asset = 1;
+
+  // The update mask to apply when performing the update.
+  google.protobuf.FieldMask update_mask = 2 [(google.api.field_behavior) = REQUIRED];
+
+  // Mask of fields to retrieve from the updated asset.
+  google.protobuf.FieldMask fields = 4 [(google.api.field_behavior) = OPTIONAL];
+
+  // The current etag of the asset.
+  // If an etag is provided and does not match the current etag of the asset,
+  // the update will be prevented and an ABORTED error will be returned.
+  string etag = 3 [(google.api.field_behavior) = REQUIRED];
+
+  // A unique identifier for this request. A random UUID is recommended.
+  // This request is only idempotent if a `request_id` is provided.
+  string request_id = 5  ;
+}
+
+message UpdateAssetResponse {
+  // The updated asset.
+  Asset asset = 1;
+}
+
+message DeleteAssetRequest {
+  // The resource name of the asset, e.g. assets/{asset_id}
+  string name = 1 [
+    (google.api.field_behavior) = REQUIRED,
+    (google.api.resource_reference).type = "repository.platform.fico.com/Asset"
+  ];
+
+  // The current etag of the asset.
+  // If an etag is provided and does not match the current etag of the asset,
+  // deletion will be prevented and an ABORTED error will be returned.
+  string etag = 2 [(google.api.field_behavior) = REQUIRED];
+
+  // Mask of fields to retrieve from the asset.
+  google.protobuf.FieldMask fields = 3 [(google.api.field_behavior) = OPTIONAL];
+
+  // A unique identifier for this request. A random UUID is recommended.
+  // This request is only idempotent if a `request_id` is provided.
+  string request_id = 4 ;
+}
+
+message DeleteAssetResponse {
+  // The updated asset.
+  Asset asset = 1;
+}
+
+message ListAssetsRequest {
+  string parent = 6 [(google.api.field_behavior) = REQUIRED];
+  int32 page_size = 1 [(google.api.field_behavior) = OPTIONAL];
+  string page_token = 2 [(google.api.field_behavior) = OPTIONAL];
+  string filter = 3 [(google.api.field_behavior) = OPTIONAL];
+  string order_by = 4 [(google.api.field_behavior) = OPTIONAL];
+  google.protobuf.FieldMask fields = 5 [(google.api.field_behavior) = OPTIONAL];
+}
+
+message ListAssetsResponse {
+  repeated Asset assets = 1;
+  string next_page_token = 2;
+}
+
+// Predefined views of a Asset to restrict the fields contained in the response
+enum AssetView {
+  // if unspecified, default is ASSET_VIEW_BASIC
+  ASSET_VIEW_UNSPECIFIED = 0;
+  // Fields for basic view : this will provide the details of the Asset only without SimpleContent.
+  ASSET_VIEW_BASIC = 1;
+  ASSET_VIEW_FULL = 2;
+  // TODO: Consider whether the view should avoid populating lineage_parent - is this subject to an authz check?
+}

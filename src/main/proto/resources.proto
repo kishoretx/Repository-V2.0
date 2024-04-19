@@ -1,0 +1,188 @@
+/**
+ * This material is the confidential, unpublished property
+ * of Fair Isaac Corporation. Receipt or possession
+ * of this material does not convey rights to divulge,
+ * reproduce, use, or allow others to use it without
+ * the specific written authorization of Fair Isaac Corporation
+ * and use must conform strictly to the
+ * license agreement.
+ *
+ * Copyright (c) Fair Isaac Corporation, 2024
+ *
+ * All Rights Reserved.
+ */
+syntax = "proto3";
+
+package fico.platform.repository.v2alpha1;
+
+//import "buf/validate/validate.proto";
+import "google/api/field_behavior.proto";
+import "google/api/resource.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_outer_classname = "ResourcesProto";
+option java_package = "com.fico.platform.repository.v2alpha1";
+
+// All assets are based on an asset type.
+// Asset types are registered with repository when an architecture service is deployed.
+message AssetType {
+  option (google.api.resource) = {
+    type: "repository.platform.fico.com/AssetType",
+    pattern: "assetTypes/{asset_type_id}"
+  };
+  // The resource name of the asset type. e.g. assetTypes/{asset_type_id}
+  string name = 1 ;
+  // A readable name for the asset type.
+  string display_name = 2 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  repeated AssetTypeVersion versions = 3 [(google.api.field_behavior) = OUTPUT_ONLY];
+}
+
+message AssetTypeVersion {
+  option (google.api.resource) = {
+    type: "repository.platform.fico.com/AssetTypeVersion",
+    pattern: "assetTypes/{asset_type_id}/versions/{version_id}"
+  };
+  // The resource name of the asset type. e.g. assetTypes/{asset_type_id}/versions/{version_id}
+  string name = 1 ;
+
+  // The version of the asset type.
+  string version = 2 [(google.api.field_behavior) = OUTPUT_ONLY];
+}
+
+// An asset is... TODO: document
+message Asset {
+  option (google.api.resource) = {
+    type: "repository.platform.fico.com/Asset",
+    pattern: "assetTypes/{asset_type_id}/assets/{asset_id}"
+  };
+
+  // The resource name of this asset, e.g. assetTypes/{asset_type_id}/assets/{asset_id}.
+  string name = 1 ;
+
+  // The asset type version this asset adheres to, required when creating a new asset.
+  string asset_type_version = 2 [
+    (google.api.field_behavior) = OPTIONAL,
+    (google.api.resource_reference).type = "repository.platform.fico.com/AssetTypeVersion"
+  ];
+
+  // The etag is a value computed by the server based on the state of the asset,
+  // and may be sent on update and delete requests to ensure the
+  // client has an up-to-date asset before proceeding.
+  string etag = 3 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  // The segmentation unit that owns this asset.
+  // e.g. //organizationallifecycle.fico.com/organizationalUnits/su_asd2af0b-5311-4eaf-a12c-6635c555d719/segmentationUnits/canada_asd2af0b-5311-4eaf-a12c-6635c555d111
+  // TODO: Add resource_reference annotations.
+  string segmentation_unit = 4 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  // Timestamp when the asset was created.
+  google.protobuf.Timestamp create_time = 5 [(google.api.field_behavior) = OUTPUT_ONLY];
+  // User who created the asset.
+  // TODO: Agree the pattern of user, is this a resource name to a resource exposed by IAM?
+  string create_user = 6 [(google.api.field_behavior) = OUTPUT_ONLY];
+  // Timestamp when the asset was last updated.
+  google.protobuf.Timestamp update_time = 7 [(google.api.field_behavior) = OUTPUT_ONLY];
+  // User who last updated the asset.
+  string update_user = 8 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  // Timestamp when the asset was deleted.
+  // If the asset was deleted then this field returns the timestamp when the asset was marked as deleted by the service.
+  google.protobuf.Timestamp delete_time = 9 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  // User who deleted the asset.
+  string delete_user = 10 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  // A readable name for the asset.
+  // Must contain only alphanumeric characters, spaces, dashes, and underscores.
+  // TODO: review validation requirements. A single character min length seems to permissive, the charset too restrictive.
+  string display_name = 11 ;
+
+  // Uniquely identifies all of the different versions of an asset.
+  // This value is retained when creating a new version of an asset.
+  // Asset version number therefore unique within a lineage group.
+  string lineage_group = 12 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  // The version this asset is based on.
+  // Supply this field when creating a new version of an asset.
+  // e.g. assets/{asset_id}
+  string lineage_parent = 13 [(google.api.field_behavior) = IMMUTABLE];
+
+  // The version number increment used to derive the version number of the asset.
+  // Indicates to consumers the level of change involved when upgrading from a previous version.
+  VersionLevel version_level = 14 ;
+
+  // The version number of the asset.
+  // Follows semantic versioning and conveys the level of change when upgrading from a previous version.
+  string version = 15 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  // The progress state of the asset.
+  // Assets in the PUBLISHED state are immutable; they cannot be updated nor deleted.
+  ProgressState progress_state = 16 ;
+
+  // A brief description of the asset.
+  // The maximum allowed length is 1000 characters.
+  string description = 17 ;
+
+  // User provided tags associated with the asset.
+  // TODO: check length constraints and the absence of pattern.
+  repeated string user_tags = 18 ;
+
+  // Service provided tags associated with the asset.
+  // TODO: check length constraints and the absence of pattern.
+  repeated string service_tags = 19 ;
+
+  // Service provided labels associated with the asset.
+  map<string, string> service_labels = 20 ;
+
+  // The asset type specific content held against this asset.
+  oneof content {
+    // An asset can contain structured content.
+    StructuredContent structured_content = 21 [(google.api.field_behavior) = OPTIONAL];
+  }
+
+  // The latest remark made when updating the asset.
+  string remark_comment = 22 ;
+  // Timestamp when the latest remark was made.
+  google.protobuf.Timestamp remark_time = 23 [(google.api.field_behavior) = OUTPUT_ONLY];
+  // User who made the latest remark.
+  string remark_user = 24 [(google.api.field_behavior) = OUTPUT_ONLY];
+
+  // The lock state of the asset.
+  // Setting this state to LOCKED prevents other users from modifying the asset.
+  // Setting this state to UNLOCKED releases the lock and allows any authorized user to modify the asset.
+  LockState lock_state = 25 ;
+  // Timestamp when the lock was acquired.
+  google.protobuf.Timestamp lock_time = 26 [(google.api.field_behavior) = OUTPUT_ONLY];
+  // User who acquired the lock.
+  string lock_user = 27 [(google.api.field_behavior) = OUTPUT_ONLY];
+}
+
+message StructuredContent {
+  // The structured content of an asset.
+  google.protobuf.Struct content = 1;
+}
+
+enum LockState {
+  LOCK_STATE_UNSPECIFIED = 0;
+  LOCK_STATE_LOCKED = 1;
+  LOCK_STATE_UNLOCKED = 2;
+}
+
+// The progress state of an asset.
+// Additional states may be added in later releases; clients should treat unrecognised enum values
+// as DEVELOPMENT to remain compatible with later releases of this API.
+enum ProgressState {
+  PROGRESS_STATE_UNSPECIFIED = 0;
+  PROGRESS_STATE_DEVELOPMENT = 1;
+  PROGRESS_STATE_PUBLISHED = 2;
+}
+
+enum VersionLevel {
+  VERSION_LEVEL_UNSPECIFIED = 0;
+  VERSION_LEVEL_MAJOR = 1;
+  VERSION_LEVEL_MINOR = 2;
+  VERSION_LEVEL_PATCH = 3;
+}

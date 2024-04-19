@@ -1,0 +1,4790 @@
+{
+  "content": {
+    "name": "trees/TREE_UUID/versions/1.0.0",
+    "parent": "trees/TREE_UUID",
+    "displayName": "PerformanceTestRecTreeKK_R5x5",
+    "description": "Description for PerformanceTestRecTreeKK_R5x5",
+    "tags": [
+      "tree",
+      "test",
+      "automated",
+      "automatedTestTree",
+      "tree",
+      "test",
+      "automated",
+      "automatedTestTree"
+    ],
+    "arguments": [
+      {
+        "argumentName": "customer",
+        "dataType": {
+          "typeName": "businessTermSets/5bb92ad3-e927-45a9-99cf-2fb6299f7102/versions/1.0.0"
+        }
+      }
+    ],
+    "variables": [
+      {
+        "variableName": "numberOfLoans",
+        "dataType": {
+          "typeName": "primitiveTypes/int/versions/1.0.0"
+        },
+        "initializerTerm": "customer.numberOfLoans"
+      },
+      {
+        "variableName": "credit_limit",
+        "dataType": {
+          "typeName": "primitiveTypes/double/versions/1.0.0"
+        },
+        "initializerTerm": "customer.credit_limit"
+      },
+      {
+        "variableName": "totalLoanBalance",
+        "dataType": {
+          "typeName": "primitiveTypes/double/versions/1.0.0"
+        },
+        "initializerTerm": "customer.totalLoanBalance"
+      }
+    ],
+    "nodes": [
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/0",
+        "parent": "trees/TREE_UUID/versions/1.0.0",
+        "displayName": "Start"
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/1",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/0",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/2",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/0",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/3",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/0",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/4",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/0",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/5",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/0",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/6",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/1",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/7",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/1",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/8",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/1",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/9",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/1",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/10",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/1",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/11",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/6",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/12",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/6",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/13",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/6",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/14",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/6",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/15",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/6",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/16",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/11",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/17",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/11",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/18",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/11",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/19",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/11",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/20",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/11",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/21",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/16",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/22",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/16",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/23",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/16",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/24",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/16",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/25",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/16",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/26",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/17",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/27",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/17",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/28",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/17",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/29",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/17",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/30",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/17",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/31",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/18",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/32",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/18",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/33",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/18",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/34",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/18",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/35",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/18",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/36",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/19",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/37",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/19",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/38",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/19",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/39",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/19",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/40",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/19",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/41",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/20",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/42",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/20",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/43",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/20",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/44",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/20",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/45",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/20",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/46",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/12",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/47",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/12",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/48",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/12",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/49",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/12",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/50",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/12",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/51",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/46",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/52",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/46",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/53",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/46",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/54",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/46",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/55",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/46",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/56",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/47",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/57",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/47",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/58",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/47",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/59",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/47",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/60",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/47",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/61",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/48",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/62",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/48",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/63",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/48",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/64",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/48",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/65",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/48",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/66",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/49",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/67",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/49",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/68",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/49",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/69",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/49",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/70",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/49",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/71",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/50",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/72",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/50",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/73",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/50",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/74",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/50",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/75",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/50",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/76",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/13",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/77",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/13",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/78",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/13",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/79",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/13",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/80",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/13",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/81",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/76",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/82",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/76",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/83",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/76",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/84",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/76",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/85",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/76",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/86",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/77",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/87",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/77",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/88",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/77",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/89",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/77",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/90",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/77",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/91",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/78",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/92",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/78",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/93",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/78",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/94",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/78",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/95",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/78",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/96",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/79",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/97",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/79",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/98",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/79",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/99",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/79",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/100",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/79",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/101",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/80",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/102",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/80",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/103",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/80",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/104",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/80",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/105",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/80",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/106",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/14",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/107",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/14",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/108",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/14",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/109",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/14",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/110",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/14",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/111",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/106",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/112",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/106",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/113",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/106",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/114",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/106",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/115",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/106",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/116",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/107",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/117",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/107",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/118",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/107",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/119",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/107",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/120",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/107",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/121",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/108",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/122",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/108",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/123",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/108",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/124",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/108",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/125",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/108",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/126",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/109",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/127",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/109",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/128",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/109",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/129",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/109",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/130",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/109",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/131",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/110",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/132",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/110",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/133",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/110",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/134",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/110",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/135",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/110",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/136",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/15",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/137",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/15",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/138",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/15",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/139",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/15",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/140",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/15",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/141",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/136",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/142",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/136",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/143",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/136",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/144",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/136",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/145",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/136",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/146",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/137",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/147",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/137",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/148",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/137",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/149",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/137",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/150",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/137",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/151",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/138",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/152",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/138",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/153",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/138",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/154",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/138",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/155",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/138",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/156",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/139",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/157",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/139",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/158",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/139",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/159",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/139",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/160",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/139",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/161",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/140",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/162",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/140",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/163",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/140",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/164",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/140",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/165",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/140",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/166",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/7",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/167",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/7",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/168",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/7",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/169",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/7",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/170",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/7",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/171",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/166",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/172",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/166",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/173",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/166",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/174",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/166",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/175",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/166",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/176",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/171",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/177",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/171",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/178",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/171",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/179",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/171",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/180",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/171",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/181",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/172",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/182",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/172",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/183",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/172",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/184",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/172",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/185",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/172",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/186",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/173",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/187",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/173",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/188",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/173",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/189",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/173",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/190",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/173",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/191",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/174",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/192",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/174",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/193",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/174",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/194",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/174",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/195",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/174",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/196",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/175",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/197",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/175",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/198",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/175",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/199",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/175",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/200",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/175",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/201",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/167",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/202",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/167",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/203",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/167",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/204",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/167",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/205",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/167",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/206",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/201",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/207",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/201",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/208",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/201",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/209",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/201",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/210",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/201",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/211",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/202",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/212",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/202",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/213",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/202",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/214",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/202",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/215",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/202",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/216",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/203",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/217",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/203",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/218",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/203",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/219",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/203",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/220",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/203",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/221",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/204",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/222",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/204",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/223",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/204",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/224",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/204",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/225",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/204",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/226",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/205",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/227",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/205",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/228",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/205",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/229",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/205",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/230",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/205",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/231",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/168",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/232",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/168",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/233",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/168",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/234",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/168",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/235",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/168",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/236",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/231",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/237",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/231",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/238",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/231",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/239",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/231",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/240",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/231",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/241",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/232",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/242",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/232",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/243",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/232",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/244",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/232",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/245",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/232",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/246",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/233",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/247",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/233",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/248",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/233",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/249",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/233",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/250",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/233",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/251",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/234",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/252",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/234",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/253",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/234",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/254",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/234",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/255",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/234",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/256",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/235",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/257",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/235",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/258",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/235",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/259",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/235",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/260",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/235",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/261",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/169",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/262",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/169",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/263",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/169",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/264",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/169",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/265",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/169",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/266",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/261",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/267",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/261",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/268",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/261",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/269",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/261",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/270",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/261",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/271",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/262",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/272",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/262",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/273",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/262",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/274",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/262",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/275",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/262",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/276",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/263",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/277",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/263",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/278",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/263",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/279",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/263",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/280",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/263",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/281",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/264",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/282",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/264",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/283",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/264",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/284",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/264",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/285",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/264",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/286",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/265",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/287",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/265",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/288",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/265",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/289",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/265",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/290",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/265",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/291",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/170",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 0,
+            "upper": 1,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "0"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/292",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/170",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 1,
+            "upper": 2,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "1"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/293",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/170",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 2,
+            "upper": 3,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "2"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/294",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/170",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 3,
+            "upper": 4,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "3"
+        }
+      },
+      {
+        "name": "trees/TREE_UUID/versions/1.0.0/nodes/295",
+        "parent": "trees/TREE_UUID/versions/1.0.0/nodes/170",
+        "nodeCondition": {
+          "conditionType": "CONDITION_TYPE_CONDITION_RANGE_FLOAT",
+          "variableName": "x",
+          "range": {
+            "lower": 4,
+            "upper": 5,
+            "rangeType": "RANGE_TYPE_LTE_GT"
+          }
+        },
+        "metadata": {
+          "index": "4"
+        }
+      }
+    ],
+    "auditMetadata": {
+      "createTime": "2024-01-19T16:51:06.474076345Z",
+      "createUser": {
+        "id": "66081043-4ec1-4315-b2f2-fae369c8e1e0",
+        "displayName": "Repository Admin",
+        "email": "repo-admin@fico.com"
+      },
+      "updateTime": "2024-01-19T16:51:06.474076345Z",
+      "updateUser": {
+        "id": "66081043-4ec1-4315-b2f2-fae369c8e1e0",
+        "displayName": "Repository Admin",
+        "email": "repo-admin@fico.com"
+      }
+    }
+  }
+}
